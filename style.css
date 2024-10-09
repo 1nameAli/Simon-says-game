@@ -1,0 +1,99 @@
+body {
+  text-align: center;
+  font-family: Arial, sans-serif; /* Add a clean, modern font */
+  background-color: #d9d9e3bd; /* Light background color for contrast */
+  margin: 0;
+  padding: 0;
+}
+/* Main Heading (h1) */
+h1 {
+  font-size: 48px; /* Large size for the main heading */
+  font-weight: bold; /* Make it stand out */
+  background: linear-gradient(135deg, #ff416c, #ff4b2b); /* Gradient background */
+  -webkit-background-clip: text; /* Clip gradient to text */
+  -webkit-text-fill-color: transparent; /* Make the text use the gradient */
+  text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+  letter-spacing: 2px; /* Add some space between letters */
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-align: center; /* Center align */
+  text-transform: uppercase; /* Uppercase for emphasis */
+}
+/* Subheading (h2) */
+h2 {
+  font-size: 36px; /* Slightly smaller than h1 */
+  font-weight: 600; /* Not as bold as h1, but still strong */
+  color: #333; /* Dark gray for good contrast */
+  letter-spacing: 1px; /* Slight spacing for readability */
+  margin-bottom: 20px;
+  text-transform: capitalize; /* Capitalize for a softer look */
+  text-align: center; /* Center-align for symmetry */
+}
+/* Section Heading (h3) */
+h3 {
+  font-size: 28px; /* Medium-sized */
+  font-weight: 500; /* Slightly less bold */
+  color: #007bff; /* Attractive blue color */
+  margin-bottom: 15px;
+  text-transform: none; /* Keep the text in its natural case */
+  border-bottom: 2px solid #007bff; /* Add a bottom border for emphasis */
+  padding-bottom: 5px;
+  letter-spacing: 0.5px; /* Less letter spacing */
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Ensures buttons wrap if the screen is smaller */
+  margin-top: 2rem; /* Add space at the top */
+}
+
+.btn {
+  margin: 1.5rem; /* Reduced margin for better spacing */
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Make buttons circular */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+  border: none; /* Remove default border */
+  cursor: pointer; /* Show a pointer cursor on hover */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.btn:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2); /* Deepen the shadow on hover */
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.green {
+  background-color: green;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+/* Flash effect */
+.Flash {
+  background-color: white;
+  animation: flash 0.25s ease; /* Flash animation for smooth effect */
+}
+
+@keyframes flash {
+  0% {
+    background-color: inherit; /* Start with the current color */
+  }
+  50% {
+    background-color: white; /* Flash to white */
+  }
+  100% {
+    background-color: inherit; /* Return to the original color */
+  }
+}
